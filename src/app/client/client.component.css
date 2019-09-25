@@ -1,0 +1,33 @@
+.online {
+  color: white;
+}
+
+.disconnected {
+  color: red;
+  align-self: center;
+  background: #c3a4a4;
+  margin: 20px;
+}
+
+.connected {
+  color: green;
+  align-self: center;
+  background: #9bc39b;
+  margin: 20px;
+}
+
+.client-card {
+  display: flex;
+  font-size: 30px;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgb(170, 205, 233);
+  box-shadow: 10px 10px;
+  min-width: 650px;
+}
+
+.connection-status {
+  display: flex;
+  flex-direction: row;
+}

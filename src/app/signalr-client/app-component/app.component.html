@@ -1,0 +1,7 @@
+<div *ngIf="isServerOnline" class="container">
+  <app-clients></app-clients>
+</div>
+<div *ngIf="!isServerOnline" class="oops-page">
+  <h1 class="offline-message">Server offline</h1>
+  <p class="offline-message">Please try again later</p>
+</div>

@@ -1,0 +1,43 @@
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
+
+<div class="client-card">
+  <div [ngStyle]="{backgroundColor: getColor()}" class="connection-status">
+    <i *ngIf='clientInfo.isConnected' class="fas fa-plug connected"></i>
+    <i *ngIf='!clientInfo.isConnected' class="fas fa-plug disconnected"></i>
+    <p>{{ clientInfo.isConnected ? 'Connected': 'Disconnected' }}</p>
+  </div>
+  <p>Client IP Address: {{ clientInfo.ipAddress }}</p>
+  <p>Client Operating System: {{ clientInfo.os }}</p>
+  <p>Client Local Time: {{ clientInfo.currentTime }}</p>
+  <p>Client Browser: {{ clientInfo.browser }}</p>
+  <p>Client Timezone: {{ clientInfo.timezoneOffset }}</p>
+  <p>Client Screen: Resolution {{ clientInfo.resolution }}</p>
+</div>
+<!-- <mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{clientName}} Inu</mat-card-title>
+    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+  </mat-card-header>
+  <img
+    mat-card-image
+    src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+    alt="Photo of a Shiba Inu"
+  />
+  <mat-card-content>
+    <p>
+      The Shiba Inu is the smallest of the six original and distinct spitz
+      breeds of dog from Japan. A small, agile dog that copes very well with
+      mountainous terrain, the Shiba Inu was originally bred for hunting.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card> -->
